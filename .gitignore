@@ -1,0 +1,9 @@
+venv
+
+__pycache__
+
+# Airflow logs
+logs/*
+
+# Keep example log
+!logs/dag_id=example_bash_operator
