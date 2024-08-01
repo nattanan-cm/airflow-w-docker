@@ -8,4 +8,4 @@ docker compose up -d
 
 docker compose up -d
 
-mkdir ./logs ./config ./dags
+mkdir ./logs ./plugins ./dags
