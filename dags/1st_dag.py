@@ -14,6 +14,7 @@ with DAG(
    description='this is my 1st dag',
    start_date=datetime(2024, 8, 1, 2),
    schedule_interval='@daily', # Run once a day at midnight
+   # schedule_interval='0 3 * * * Tue', # For cron expression, this will run at 03.00 on Tuesday
    # schedule_interval='None', # Don’t schedule, use for exclusively “externally triggered” DAGs
    # schedule_interval='@once', # Schedule once and only once
    # schedule_interval='@hourly', # Run once an hour at the beginning of the hour
