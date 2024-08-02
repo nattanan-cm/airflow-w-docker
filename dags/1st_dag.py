@@ -22,18 +22,18 @@ with DAG(
    # schedule_interval='@yearly', # Run once a year at midnight of January 1
 ) as dag:
    task1 = BashOperator(
-      task_id='1st_task',
-      bash_command='echo hello world, 1st task'
+      task_id='task_one',
+      bash_command='echo task 1'
    )
    
    task2 = BashOperator(
-      task_id='2nd_task',
-      bash_command="echo 2nd task will be running after 1st task"
+      task_id='task_two',
+      bash_command="echo task 2 will be running after task 1"
    )
    
    task3 = BashOperator(
-      task_id='3nd_task',
-      bash_command="echo 3rd task will be running after 1st task at the same time of 2nd task"
+      task_id='task_three',
+      bash_command="echo task 3 will be running after task 1 at the same time of task 2"
    )
    
    # Task dependency method 1
